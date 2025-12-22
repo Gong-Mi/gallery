@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Google AI Edge Gallery</string>
+  <string name="app_name_first_part">Google AI</string>
+  <string name="app_name_second_part">Edge Gallery</string>
+  <string name="app_intro">探索来自以下社区的精彩端侧模型</string>
+  <string name="best_overall">综合最佳</string>
+  <plurals name="model_list_number_of_models_available">
+    <item quantity="one">%d 个模型可用</item>
+    <item quantity="other">%d 个模型可用</item>
+  </plurals>
+  <string name="model_list_recommended_models_title">推荐模型</string>
+  <string name="model_list_imported_models_title">导入的模型</string>
+  <string name="model_list_experimental_label">实验性</string>
+  <string name="model_manager">模型管理器</string>
+  <string name="download">下载</string>
+  <string name="downloaded_size">已下载 %1$s</string>
+  <string name="cancel">取消</string>
+  <string name="category_unlabeled">未分类</string>
+  <string name="category_llm">大语言模型</string>
+  <string name="category_agents">智能体</string>
+  <string name="category_classical_ml">传统机器学习</string>
+  <string name="category_experimental">实验性</string>
+  <string name="checking_access">正在检查权限...</string>
+  <string name="ok">确定</string>
+  <string name="close">关闭</string>
+  <string name="error">错误</string>
+  <string name="confirm_delete_model_dialog_title">删除下载</string>
+  <string name="confirm_delete_model_dialog_content">您确定要删除已下载的模型 "%s" 吗？</string>
+  <string name="conversation_reset_message">对话已重置</string>
+  <string name="engin_reset_message">引擎已重置</string>
+  <string name="notification_title_success">模型下载成功</string>
+  <string name="notification_content_success">模型 "%s" 已下载</string>
+  <string name="notification_title_fail">模型下载失败</string>
+  <string name="notification_content_fail">模型 "%s" 下载失败</string>
+  <string name="chat_textinput_placeholder">输入消息…</string>
+  <string name="chat_you">你</string>
+  <string name="chat_llm_agent_name">大模型</string>
+  <string name="chat_agent_agent_name">智能体</string>
+  <string name="chat_generic_agent_name">模型</string>
+  <string name="chat_generic_result_name">结果</string>
+  <string name="learn_more">了解更多</string>
+  <string name="litert_community_label">LiteRT 社区</string>
+  <string name="loading_model_list">正在加载模型列表...</string>
+  <string name="memory_warning_title">内存警告</string>
+  <string name="memory_warning_content">您选择的模型可能会超出设备内存，这可能会导致应用崩溃。为了获得最佳体验，我们建议尝试较小的模型。</string>
+  <string name="memory_warning_proceed_anyway">仍然继续</string>
+  <string name="model_not_downloaded_msg">模型尚未下载</string>
+  <string name="model_is_initializing_msg">正在初始化模型…</string>
+  <string name="reset">重置</string>
+  <string name="reset_note">点击“重置”将仅重置 LiteRT-LM 引擎。游戏进度不会受到影响。</string>
+  <string name="resetting_engine">正在重置引擎...</string>
+  <string name="reinitializing_description">游戏进度不会受到影响</string>
+  <string name="settings_dialog_tos_title">服务条款</string>
+  <string name="text_input_placeholder_text_classification">输入影评以进行分类…</string>
+  <string name="text_image_generation_text_field_placeholder">输入提示词…</string>
+  <string name="text_input_placeholder_llm_chat">输入提示词…</string>
+  <string name="tos_dialog_title">欢迎使用 Google AI Edge Gallery</string>
+  <string name="tos_dialog_view_accept_button_label">接受并继续</string>
+  <string name="try_it">试一试</string>
+  <string name="run_again">再次运行</string>
+  <string name="benchmark">运行基准测试</string>
+  <string name="warming_up">正在预热…</string>
+  <string name="running">正在运行</string>
+  <string name="enter_instruction">输入指令</string>
+  <string name="invalid_response">无效响应</string>
+  <string name="hold_down_to_talk">按住说话</string>
+  <string name="release_to_send">松开发送</string>
+  <string name="slide_up_to_cancel">上滑取消</string>
+  <string name="listening">正在聆听...</string>
+  <string name="grant_record_audio_permission">授予录音权限</string>
+  <string name="unsupported_action">不支持的操作</string>
+  <string name="flashlight_on_message">我已经打开了手电筒。</string>
+  <string name="flashlight_off_message">我已经关闭了手电筒。</string>
+  <string name="set_screen_brightness_message">我已经将屏幕亮度设置为 %1$d%%。</string>
+  <string name="set_timer_message">正在设置 %1$d 秒的计时器。</string>
+  <string name="add_calendar_event_message">正在将“团队会议 (10AM-11AM)”添加到您的日历。</string>
+  <string name="take_picture_message">正在打开相机应用。</string>
+  <string name="mobile_actions_title">移动操作</string>
+  <string name="mobile_actions_description">通过简单的命令控制您的设备</string>
+  <string name="mobile_actions_supported_actions">支持的示例操作：</string>
+  <string name="mobile_actions_tab_model_response">模型响应</string>
+  <string name="mobile_actions_tab_function_called">调用的函数</string>
+  <string name="conversation_history">对话历史</string>
+  <string name="warning_no_function_call">未识别到函数</string>
+  <string name="snackbar_no_function_call">未识别到函数</string>
+  <string name="unknown_error">未知错误</string>
+
+  <string name="function_name">函数名称</string>
+  <plurals name="parameter">
+    <item quantity="one">参数</item>
+    <item quantity="other">参数</item>
+  </plurals>
+  <string name="prompt_template_label_flash_on_off">打开/关闭手电筒</string>
+  <string name="prompt_template_label_flash_on">手电筒开启</string>
+  <string name="prompt_template_label_flash_off">手电筒关闭</string>
+  <string name="prompt_template_label_create_contact">创建联系人</string>
+  <string name="prompt_template_label_send_email">发送邮件</string>
+  <string name="prompt_template_label_create_calendar_event">创建日历事件</string>
+  <string name="prompt_template_label_show_location_on_map">在地图上显示位置</string>
+  <string name="prompt_template_label_open_wifi_settings">打开 WiFi 设置</string>
+
+  <!-- Strings for MobileActionsChallengeDialog -->
+  <string name="mobile_actions_challenge_title">移动操作微调挑战</string>
+  <string name="mobile_actions_challenge_subtitle">亲手打造，尽情畅玩！</string>
+  <string name="mobile_actions_challenge_description">此演示已锁定。要解锁移动操作智能体，您需要使用我们的开源配方自行编译模型。</string>
+  <string name="mobile_actions_challenge_instructions_title">说明：</string>
+  <string name="mobile_actions_challenge_instruction_1">1. <![CDATA[<b>在您的电脑上</b>]]>, 打开 <![CDATA[<a href="https://ai.google.dev/gemma/docs/mobile-actions">此指南</a>]]></string>
+  <string name="mobile_actions_challenge_instruction_2">2. 按照说明微调模型并将其转换为 .litertlm 格式。</string>
+  <string name="mobile_actions_challenge_instruction_3">3. 将文件传输到此手机。</string>
+  <string name="mobile_actions_challenge_instruction_4">4. 点击下方的 <![CDATA[<b>加载模型</b>]]> 解锁演示。</string>
+  <string name="mobile_actions_challenge_email_colab">将指南通过邮件发送给自己</string>
+  <string name="mobile_actions_challenge_load_model">加载模型</string>
+
+  <!-- Granular strings for MobileActionsChallengeDialog instructions construction -->
+  <string name="mobile_actions_step1_prefix">"1. "</string>
+  <string name="mobile_actions_step1_bold">在您的电脑上</string>
+  <string name="mobile_actions_step1_middle">"，打开 "</string>
+  <string name="mobile_actions_step1_link">此指南</string>
+  <string name="mobile_actions_step2">2. 按照说明微调模型并将其转换为 .litertlm 格式。</string>
+  <string name="mobile_actions_step3">3. 将文件传输到此手机。</string>
+  <string name="mobile_actions_step4_prefix">"4. 点击 "</string>
+  <string name="mobile_actions_step4_bold">加载模型</string>
+  <string name="mobile_actions_step4_suffix">" 解锁演示。"</string>
+
+  <!-- New strings extracted from HomeScreen.kt -->
+  <string name="import_model_title">导入模型</string>
+  <string name="import_from_local">从本地文件导入</string>
+  <string name="model_imported_success">模型导入成功</string>
+  <string name="unsupported_file_type_title">不支持的文件类型</string>
+  <string name="unsupported_file_type_message">仅支持 ".task" 或 ".litertlm" 文件类型。</string>
+  <string name="unsupported_model_type_title">不支持的模型类型</string>
+  <string name="unsupported_model_type_message">该模型似乎是纯网页模型，此应用不支持。</string>
+  <string name="internet_connection_error">请检查您的网络连接，稍后再试。</string>
+  <string name="retry">重试</string>
+  <plurals name="model_count">
+    <item quantity="one">1 个模型</item>
+    <item quantity="other">%d 个模型</item>
+  </plurals>
+</resources>

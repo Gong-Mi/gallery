@@ -82,21 +82,22 @@ fun MobileActionsChallengeDialog(
         fontWeight = FontWeight.Bold,
       )
       val instructions = buildAnnotatedString {
-        append("1. ")
-        withStyle(style = SpanStyle(fontWeight = FontWeight.Bold)) { append("On your computer") }
-        append(", open ")
+        append(stringResource(R.string.mobile_actions_step1_prefix))
+        withStyle(style = SpanStyle(fontWeight = FontWeight.Bold)) { append(stringResource(R.string.mobile_actions_step1_bold)) }
+        append(stringResource(R.string.mobile_actions_step1_middle))
         pushStringAnnotation(tag = "URL", annotation = guideUrl)
         withStyle(style = SpanStyle(color = MaterialTheme.customColors.linkColor)) {
-          append("this guide")
+          append(stringResource(R.string.mobile_actions_step1_link))
         }
         pop()
-        append(
-          "\n2. Follow the instructions to fine tune the model and convert it to .litertlm format."
-        )
-        append("\n3. Transfer the file to this phone.")
-        append("\n4. Tap ")
-        withStyle(style = SpanStyle(fontWeight = FontWeight.Bold)) { append("Load Model") }
-        append(" below to unlock the demo.")
+        append("\n")
+        append(stringResource(R.string.mobile_actions_step2))
+        append("\n")
+        append(stringResource(R.string.mobile_actions_step3))
+        append("\n")
+        append(stringResource(R.string.mobile_actions_step4_prefix))
+        withStyle(style = SpanStyle(fontWeight = FontWeight.Bold)) { append(stringResource(R.string.mobile_actions_step4_bold)) }
+        append(stringResource(R.string.mobile_actions_step4_suffix))
       }
       ClickableText(
         text = instructions,
