@@ -373,7 +373,7 @@ fun MessageInputText(
                           horizontalArrangement = Arrangement.spacedBy(6.dp),
                         ) {
                           Icon(Icons.Rounded.PhotoCamera, contentDescription = null)
-                          Text("Take a picture")
+                          Text(stringResource(R.string.menu_take_picture))
                         }
                       },
                       enabled = enableAddImageMenuItems,
@@ -405,7 +405,7 @@ fun MessageInputText(
                           horizontalArrangement = Arrangement.spacedBy(6.dp),
                         ) {
                           Icon(Icons.Rounded.Photo, contentDescription = null)
-                          Text("Pick from album")
+                          Text(stringResource(R.string.menu_pick_from_album))
                         }
                       },
                       enabled = enableAddImageMenuItems,
@@ -428,7 +428,7 @@ fun MessageInputText(
                           horizontalArrangement = Arrangement.spacedBy(6.dp),
                         ) {
                           Icon(Icons.Rounded.Mic, contentDescription = null)
-                          Text("Record audio clip")
+                          Text(stringResource(R.string.menu_record_audio))
                         }
                       },
                       enabled = enableRecordAudioClipMenuItems,
@@ -460,7 +460,7 @@ fun MessageInputText(
                           horizontalArrangement = Arrangement.spacedBy(6.dp),
                         ) {
                           Icon(Icons.Rounded.AudioFile, contentDescription = null)
-                          Text("Pick wav file")
+                          Text(stringResource(R.string.menu_pick_wav))
                         }
                       },
                       enabled = enableRecordAudioClipMenuItems,
@@ -496,7 +496,7 @@ fun MessageInputText(
                           horizontalArrangement = Arrangement.spacedBy(6.dp),
                         ) {
                           Icon(Icons.Rounded.PostAdd, contentDescription = null)
-                          Text("Prompt templates")
+                          Text(stringResource(R.string.menu_prompt_templates))
                         }
                       },
                       onClick = {
@@ -513,7 +513,7 @@ fun MessageInputText(
                         horizontalArrangement = Arrangement.spacedBy(6.dp),
                       ) {
                         Icon(Icons.Rounded.History, contentDescription = null)
-                        Text("Input history")
+                        Text(stringResource(R.string.menu_input_history))
                       }
                     },
                     onClick = {

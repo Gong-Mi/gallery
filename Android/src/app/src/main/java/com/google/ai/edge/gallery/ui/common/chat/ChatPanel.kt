@@ -692,7 +692,7 @@ fun ChatPanel(
                 contentDescription = stringResource(R.string.cd_copy_to_clipboard_icon),
                 modifier = Modifier.size(18.dp),
               )
-              Text("Copy text")
+              Text(stringResource(R.string.copy_text))
             }
           }
         }

@@ -67,8 +67,8 @@ fun BenchmarkConfigDialog(
   onBenchmarkClicked: (ChatMessage, warmUpIterations: Int, benchmarkIterations: Int) -> Unit,
 ) {
   ConfigDialog(
-    title = "Benchmark configs",
-    okBtnLabel = "Start",
+    title = stringResource(R.string.benchmark_configs_title),
+    okBtnLabel = stringResource(R.string.start_benchmark_button),
     configs = BENCHMARK_CONFIGS,
     initialValues = BENCHMARK_CONFIGS_INITIAL_VALUES,
     onDismissed = onDismissed,

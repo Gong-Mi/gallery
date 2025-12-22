@@ -38,7 +38,7 @@ fun ModelNotDownloaded(modifier: Modifier = Modifier, onClicked: () -> Unit) {
     verticalArrangement = Arrangement.Center,
     horizontalAlignment = Alignment.CenterHorizontally,
   ) {
-    Button(onClick = onClicked) { Text("Download & Try it", maxLines = 1) }
+    Button(onClick = onClicked) { Text(stringResource(R.string.download_and_try_it), maxLines = 1) }
   }
 }
 

@@ -137,4 +137,78 @@
     <item quantity="one">1 个模型</item>
     <item quantity="other">%d 个模型</item>
   </plurals>
+
+  <!-- GalleryAppTopBar -->
+  <string name="action_done">完成</string>
+
+  <!-- ExampleCustomTaskScreen -->
+  <string name="text_color_label">文字颜色：</string>
+
+  <!-- DownloadAndTryButton -->
+  <string name="acknowledge_user_agreement_title">确认用户协议</string>
+  <string name="acknowledge_user_agreement_content">这是一个门控模型。请点击下面的按钮查看并同意用户协议。接受后，只需关闭该标签页即可继续下载模型。</string>
+  <string name="open_user_agreement_button">打开用户协议</string>
+  <string name="unknown_network_error_title">未知网络错误</string>
+  <string name="check_internet_connection_message">请检查您的网络连接。</string>
+
+  <!-- ModelPageAppBar -->
+  <string name="model_configs_title">模型配置</string>
+
+  <!-- BenchmarkConfigDialog -->
+  <string name="benchmark_configs_title">基准测试配置</string>
+  <string name="start_benchmark_button">开始</string>
+
+  <!-- ChatPanel -->
+  <string name="copy_text">复制文本</string>
+
+  <!-- MessageInputText -->
+  <string name="menu_take_picture">拍照</string>
+  <string name="menu_pick_from_album">从相册选择</string>
+  <string name="menu_record_audio">录制音频片段</string>
+  <string name="menu_pick_wav">选择 WAV 文件</string>
+  <string name="menu_prompt_templates">提示词模板</string>
+  <string name="menu_input_history">输入历史</string>
+
+  <!-- ModelNotDownloaded -->
+  <string name="download_and_try_it">下载并试用</string>
+
+  <!-- TextInputHistorySheet -->
+  <string name="clear_history_title">清除历史记录？</string>
+  <string name="clear_history_confirmation">您确定要清除历史记录吗？此操作无法撤销。</string>
+  <string name="text_input_history_title">文本输入历史</string>
+
+  <!-- HomeScreen -->
+  <string name="cd_experimental">实验性</string>
+
+  <!-- ModelImportDialog -->
+  <string name="import_model_dialog_title">导入模型</string>
+  <string name="import_button_label">导入</string>
+
+  <!-- SettingsDialog -->
+  <string name="settings_title">设置</string>
+  <string name="app_version_label">应用版本：%s</string>
+  <string name="theme_label">主题</string>
+  <string name="theme_auto">自动</string>
+  <string name="theme_light">浅色</string>
+  <string name="theme_dark">深色</string>
+  <string name="theme_unknown">未知</string>
+  <string name="hf_token_label">HuggingFace 访问令牌</string>
+  <string name="hf_token_expires_at">过期时间：%s</string>
+  <string name="hf_token_not_available">不可用</string>
+  <string name="hf_token_auto_retrieval_note">下载门控模型时将自动检索令牌</string>
+  <string name="clear_button_label">清除</string>
+  <string name="enter_token_manually_placeholder">手动输入令牌</string>
+  <string name="third_party_libraries_label">第三方库</string>
+  <string name="view_licenses_button">查看许可</string>
+  <string name="view_tos_button">查看服务条款</string>
+
+  <!-- PromptTemplatesPanel -->
+  <string name="enter_content_placeholder">输入内容</string>
+  <string name="preview_prompt_label">预览提示词</string>
+  <string name="select_example_title">选择一个示例</string>
+
+  <!-- DownloadWorker -->
+  <string name="notification_downloading_model_title">正在下载模型</string>
+  <string name="notification_downloading_model_name_title">正在下载 \"%s\"</string>
+  <string name="notification_downloading_progress">下载进度：%d%%</string>
 </resources>

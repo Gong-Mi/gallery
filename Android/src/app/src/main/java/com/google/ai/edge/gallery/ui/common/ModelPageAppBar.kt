@@ -200,7 +200,7 @@ fun ModelPageAppBar(
   // Config dialog.
   if (showConfigDialog) {
     ConfigDialog(
-      title = "Model configs",
+      title = stringResource(R.string.model_configs_title),
       configs = model.configs,
       initialValues = model.configValues,
       onDismissed = { showConfigDialog = false },

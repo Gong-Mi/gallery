@@ -124,7 +124,7 @@ fun GalleryTopAppBar(
 
         // Click a button to navigate up.
         AppBarActionType.NAVIGATE_UP -> {
-          TextButton(onClick = rightAction.actionFn) { Text("Done") }
+          TextButton(onClick = rightAction.actionFn) { Text(stringResource(R.string.action_done)) }
         }
 
         else -> {}

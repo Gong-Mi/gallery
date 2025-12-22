@@ -132,7 +132,7 @@ fun ExampleCustomTaskScreen(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.padding(16.dp),
       ) {
-        Text("Text color: ")
+        Text(stringResource(R.string.text_color_label))
         for (color in colors) {
           Box(
             modifier =

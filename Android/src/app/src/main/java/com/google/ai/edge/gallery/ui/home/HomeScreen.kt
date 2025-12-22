@@ -992,7 +992,7 @@ private fun TaskCard(
           if (task.experimental) {
             Icon(
               painter = painterResource(R.drawable.ic_experiment),
-              contentDescription = "Experimental",
+              contentDescription = stringResource(R.string.cd_experimental),
               modifier = Modifier.size(20.dp).padding(start = 4.dp),
               tint = MaterialTheme.colorScheme.onSurfaceVariant,
             )

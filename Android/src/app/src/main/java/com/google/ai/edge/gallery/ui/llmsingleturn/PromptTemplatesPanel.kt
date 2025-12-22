@@ -247,7 +247,7 @@ fun PromptTemplatesPanel(
                   disabledContainerColor = Color.Transparent,
                 ),
               textStyle = bodyLargeNarrow,
-              placeholder = { Text("Enter content") },
+              placeholder = { Text(stringResource(R.string.enter_content_placeholder)) },
               modifier =
                 Modifier.padding(bottom = 40.dp).focusRequester(focusRequester).semantics {
                   contentDescription = cdContentInput
@@ -302,7 +302,7 @@ fun PromptTemplatesPanel(
                   modifier = Modifier.size(FilterChipDefaults.IconSize).alpha(0.3f),
                 )
               }
-              Text("Preview prompt", style = MaterialTheme.typography.labelMedium)
+              Text(stringResource(R.string.preview_prompt_label), style = MaterialTheme.typography.labelMedium)
             }
           }
 
@@ -416,7 +416,7 @@ fun PromptTemplatesPanel(
       Column(modifier = Modifier.padding(bottom = 16.dp)) {
         // Title
         Text(
-          "Select an example",
+          stringResource(R.string.select_example_title),
           modifier = Modifier.fillMaxWidth().padding(16.dp),
           style = MaterialTheme.typography.titleLarge,
         )

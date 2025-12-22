@@ -472,9 +472,9 @@ fun DownloadAndTryButton(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(horizontal = 16.dp),
       ) {
-        Text("Acknowledge user agreement", style = MaterialTheme.typography.titleLarge)
+        Text(stringResource(R.string.acknowledge_user_agreement_title), style = MaterialTheme.typography.titleLarge)
         Text(
-          "This is a gated model. Please click the button below to view and agree to the user agreement. After accepting, simply close that tab to proceed with the model download.",
+          stringResource(R.string.acknowledge_user_agreement_content),
           style = MaterialTheme.typography.bodyMedium,
           modifier = Modifier.padding(vertical = 16.dp),
         )
@@ -494,7 +494,7 @@ fun DownloadAndTryButton(
             showAgreementAckSheet = false
           }
         ) {
-          Text("Open user agreement")
+          Text(stringResource(R.string.open_user_agreement_button))
         }
       }
     }
@@ -509,10 +509,10 @@ fun DownloadAndTryButton(
           tint = MaterialTheme.colorScheme.error,
         )
       },
-      title = { Text("Unknown network error") },
-      text = { Text("Please check your internet connection.") },
+      title = { Text(stringResource(R.string.unknown_network_error_title)) },
+      text = { Text(stringResource(R.string.check_internet_connection_message)) },
       onDismissRequest = { showErrorDialog = false },
-      confirmButton = { TextButton(onClick = { showErrorDialog = false }) { Text("Close") } },
+      confirmButton = { TextButton(onClick = { showErrorDialog = false }) { Text(stringResource(R.string.close)) } },
     )
   }
 

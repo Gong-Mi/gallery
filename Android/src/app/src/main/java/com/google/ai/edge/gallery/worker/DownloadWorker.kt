@@ -57,6 +57,8 @@ import java.util.zip.ZipInputStream
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
+import com.google.ai.edge.gallery.R
+
 private const val TAG = "AGDownloadWorker"
 
 data class UrlAndFileName(val url: String, val fileName: String)
@@ -329,11 +331,11 @@ class DownloadWorker(context: Context, params: WorkerParameters) :
    */
   private fun createForegroundInfo(progress: Int, modelName: String? = null): ForegroundInfo {
     // Create a notification for the foreground service
-    var title = "Downloading model"
+    var title = applicationContext.getString(R.string.notification_downloading_model_title)
     if (modelName != null) {
-      title = "Downloading \"$modelName\""
+      title = applicationContext.getString(R.string.notification_downloading_model_name_title, modelName)
     }
-    val content = "Downloading in progress: $progress%"
+    val content = applicationContext.getString(R.string.notification_downloading_progress, progress)
 
     val intent =
       Intent(applicationContext, Class.forName("com.google.ai.edge.gallery.MainActivity")).apply {

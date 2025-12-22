@@ -154,6 +154,80 @@
     <item quantity="other">%d Models</item>
   </plurals>
 
+  <!-- GalleryAppTopBar -->
+  <string name="action_done">Done</string>
+
+  <!-- ExampleCustomTaskScreen -->
+  <string name="text_color_label">Text color: </string>
+
+  <!-- DownloadAndTryButton -->
+  <string name="acknowledge_user_agreement_title">Acknowledge user agreement</string>
+  <string name="acknowledge_user_agreement_content">This is a gated model. Please click the button below to view and agree to the user agreement. After accepting, simply close that tab to proceed with the model download.</string>
+  <string name="open_user_agreement_button">Open user agreement</string>
+  <string name="unknown_network_error_title">Unknown network error</string>
+  <string name="check_internet_connection_message">Please check your internet connection.</string>
+
+  <!-- ModelPageAppBar -->
+  <string name="model_configs_title">Model configs</string>
+
+  <!-- BenchmarkConfigDialog -->
+  <string name="benchmark_configs_title">Benchmark configs</string>
+  <string name="start_benchmark_button">Start</string>
+
+  <!-- ChatPanel -->
+  <string name="copy_text">Copy text</string>
+
+  <!-- MessageInputText -->
+  <string name="menu_take_picture">Take a picture</string>
+  <string name="menu_pick_from_album">Pick from album</string>
+  <string name="menu_record_audio">Record audio clip</string>
+  <string name="menu_pick_wav">Pick wav file</string>
+  <string name="menu_prompt_templates">Prompt templates</string>
+  <string name="menu_input_history">Input history</string>
+
+  <!-- ModelNotDownloaded -->
+  <string name="download_and_try_it">Download &amp; Try it</string>
+
+  <!-- TextInputHistorySheet -->
+  <string name="clear_history_title">Clear history?</string>
+  <string name="clear_history_confirmation">Are you sure you want to clear the history? This action cannot be undone.</string>
+  <string name="text_input_history_title">Text input history</string>
+
+  <!-- HomeScreen -->
+  <string name="cd_experimental">Experimental</string>
+
+  <!-- ModelImportDialog -->
+  <string name="import_model_dialog_title">Import Model</string>
+  <string name="import_button_label">Import</string>
+
+  <!-- SettingsDialog -->
+  <string name="settings_title">Settings</string>
+  <string name="app_version_label">App version: %s</string>
+  <string name="theme_label">Theme</string>
+  <string name="theme_auto">Auto</string>
+  <string name="theme_light">Light</string>
+  <string name="theme_dark">Dark</string>
+  <string name="theme_unknown">Unknown</string>
+  <string name="hf_token_label">HuggingFace access token</string>
+  <string name="hf_token_expires_at">Expires at: %s</string>
+  <string name="hf_token_not_available">Not available</string>
+  <string name="hf_token_auto_retrieval_note">The token will be automatically retrieved when a gated model is downloaded</string>
+  <string name="clear_button_label">Clear</string>
+  <string name="enter_token_manually_placeholder">Enter token manually</string>
+  <string name="third_party_libraries_label">Third-party libraries</string>
+  <string name="view_licenses_button">View licenses</string>
+  <string name="view_tos_button">View Terms of Services</string>
+
+  <!-- PromptTemplatesPanel -->
+  <string name="enter_content_placeholder">Enter content</string>
+  <string name="preview_prompt_label">Preview prompt</string>
+  <string name="select_example_title">Select an example</string>
+
+  <!-- DownloadWorker -->
+  <string name="notification_downloading_model_title">Downloading model</string>
+  <string name="notification_downloading_model_name_title">Downloading \"%s\"</string>
+  <string name="notification_downloading_progress">Downloading in progress: %d%%</string>
+
   <!-- The following entries are for accessibility -->
 
   <!-- Content description spoken when the "import model" icon is focused. [CHAR_LIMIT=NONE] -->
