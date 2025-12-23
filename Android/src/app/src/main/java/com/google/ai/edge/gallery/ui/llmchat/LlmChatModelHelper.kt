@@ -81,6 +81,7 @@ object LlmChatModelHelper {
       when (accelerator) {
         Accelerator.CPU.label -> Backend.CPU
         Accelerator.GPU.label -> Backend.GPU
+        Accelerator.NPU.label -> Backend.NPU
         else -> Backend.CPU
       }
     Log.d(TAG, "Preferred backend: $preferredBackend")
