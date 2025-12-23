@@ -16,6 +16,7 @@
 
 package com.google.ai.edge.gallery.data
 
+import com.google.ai.edge.gallery.R
 import kotlin.math.abs
 
 /**
@@ -40,7 +41,7 @@ enum class ValueType {
   BOOLEAN,
 }
 
-data class ConfigKey(val id: String, val label: String)
+data class ConfigKey(val id: String, val label: String, val labelRes: Int? = null)
 
 object ConfigKeys {
   val MAX_TOKENS = ConfigKey("max_tokens", "Max tokens")
@@ -57,7 +58,7 @@ object ConfigKeys {
   val SUPPORT_MOBILE_ACTIONS = ConfigKey("support_mobile_actions", "Support mobile actions")
   val MAX_RESULT_COUNT = ConfigKey("max_result_count", "Max result count")
   val USE_GPU = ConfigKey("use_gpu", "Use GPU")
-  val ACCELERATOR = ConfigKey("accelerator", "Choose accelerator")
+  val ACCELERATOR = ConfigKey("accelerator", "Choose accelerator", R.string.config_choose_accelerator)
   val COMPATIBLE_ACCELERATORS = ConfigKey("compatible_accelerators", "Compatible accelerators")
   val WARM_UP_ITERATIONS = ConfigKey("warm_up_iterations", "Warm up iterations")
   val BENCHMARK_ITERATIONS = ConfigKey("benchmark_iterations", "Benchmark iterations")

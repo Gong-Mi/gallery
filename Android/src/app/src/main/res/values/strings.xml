@@ -318,4 +318,5 @@
   <string name="cd_show_history">Show history</string>
   <!-- Content description spoken when the "more options" icon is focused. [CHAR_LIMIT=NONE] -->
   <string name="cd_more_options">More options</string>
+  <string name="config_choose_accelerator">Choose accelerator</string>
 </resources>

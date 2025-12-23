@@ -67,8 +67,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.res.stringResource
 import com.google.ai.edge.gallery.data.BooleanSwitchConfig
 import com.google.ai.edge.gallery.data.Config
+import com.google.ai.edge.gallery.data.ConfigKey
 import com.google.ai.edge.gallery.data.LabelConfig
 import com.google.ai.edge.gallery.data.NumberSliderConfig
 import com.google.ai.edge.gallery.data.SegmentedButtonConfig
@@ -76,6 +78,14 @@ import com.google.ai.edge.gallery.data.ValueType
 import com.google.ai.edge.gallery.ui.theme.labelSmallNarrow
 
 private const val TAG = "AGConfigDialog"
+
+@Composable
+fun ConfigLabel(key: ConfigKey) {
+  Text(
+    text = key.labelRes?.let { stringResource(it) } ?: key.label,
+    style = MaterialTheme.typography.titleSmall
+  )
+}
 
 /**
  * Displays a configuration dialog allowing users to modify settings through various input controls.
@@ -197,7 +207,7 @@ fun ConfigEditorsPanel(configs: List<Config>, values: SnapshotStateMap<String, A
 fun LabelRow(config: LabelConfig, values: SnapshotStateMap<String, Any>) {
   Column(modifier = Modifier.fillMaxWidth()) {
     // Field label.
-    Text(config.key.label, style = MaterialTheme.typography.titleSmall)
+    ConfigLabel(config.key)
     // Content label.
     val label =
       try {
@@ -240,7 +250,7 @@ fun getTextFieldDisplayValue(valueType: ValueType, value: Float): String {
 fun NumberSliderRow(config: NumberSliderConfig, values: SnapshotStateMap<String, Any>) {
   Column(modifier = Modifier.fillMaxWidth().semantics(mergeDescendants = true) {}) {
     // Field label.
-    Text(config.key.label, style = MaterialTheme.typography.titleSmall)
+    ConfigLabel(config.key)
 
     // Controls row.
     Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
@@ -334,7 +344,7 @@ fun BooleanSwitchRow(config: BooleanSwitchConfig, values: SnapshotStateMap<Strin
       false
     }
   Column(modifier = Modifier.fillMaxWidth().semantics(mergeDescendants = true) {}) {
-    Text(config.key.label, style = MaterialTheme.typography.titleSmall)
+    ConfigLabel(config.key)
     Switch(checked = switchValue, onCheckedChange = { values[config.key.label] = it })
   }
 }
@@ -349,7 +359,7 @@ fun SegmentedButtonRow(config: SegmentedButtonConfig, values: SnapshotStateMap<S
   }
 
   Column(modifier = Modifier.fillMaxWidth().semantics(mergeDescendants = true) {}) {
-    Text(config.key.label, style = MaterialTheme.typography.titleSmall)
+    ConfigLabel(config.key)
     MultiChoiceSegmentedButtonRow {
       config.options.forEachIndexed { index, label ->
         SegmentedButton(
